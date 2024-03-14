@@ -1,0 +1,6 @@
+@mixin dsfl($direction,$align-items,$txt-align){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align-items;
+    text-align: $txt-align;
+}

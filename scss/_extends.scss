@@ -1,0 +1,43 @@
+.productos_pollo {
+  @extend #section_pollo;
+  @include dsfl(column, center, center);
+  margin: 20px;
+  padding: 22px;
+  border: 3px solid black;
+  width: 200px;
+  position: relative;
+  display: flex;
+
+  div {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &:hover img {
+    transition: transform 0.3s;
+    transform: skew(10deg, 20deg);
+  }
+}
+
+.productos_pastas {
+  @extend #section_pastas;
+  border: 2px solid $cl-black;
+  margin: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &:hover img {
+    transition: transform 0.3s;
+    transform: rotate(90deg);
+  }
+}

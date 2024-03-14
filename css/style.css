@@ -1,0 +1,357 @@
+@charset "UTF-8";
+html {
+  background-color: rgb(248, 248, 244);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.productos_pollo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 22px;
+  border: 3px solid black;
+  width: 200px;
+  position: relative;
+  display: flex;
+}
+.productos_pollo div img {
+  width: 80px;
+  height: 80px;
+}
+.productos_pollo:hover img {
+  transition: transform 0.3s;
+  transform: skew(10deg, 20deg);
+}
+
+.productos_pastas {
+  border: 2px solid rgb(12, 1, 1);
+  margin: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.productos_pastas img {
+  width: 100px;
+  height: 100px;
+}
+.productos_pastas:hover img {
+  transition: transform 0.3s;
+  transform: rotate(90deg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+header nav {
+  display: flex;
+}
+header nav .logo {
+  width: 40px;
+  height: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(12, 1, 1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #063674;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 400px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+.flex-item img {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.card {
+  width: 324px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card img:hover {
+  filter: grayscale(80%);
+}
+
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 28px;
+  margin-top: 8px;
+  text-align: center;
+}
+.card-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+#section_pollo, .productos_pollo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#section_pollo .productos_pollo, .productos_pollo .productos_pollo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 22px;
+  border: 3px solid black;
+  width: 200px;
+  position: relative;
+  display: flex;
+}
+#section_pollo .productos_pollo div img, .productos_pollo .productos_pollo div img {
+  width: 80px;
+  height: 80px;
+}
+#section_pollo .productos_pollo:hover img, .productos_pollo .productos_pollo:hover img {
+  transition: transform 0.3s;
+  transform: skew(10deg, 20deg);
+}
+
+#section_pastas, .productos_pastas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#section_pastas .productos_pastas, .productos_pastas .productos_pastas {
+  border: 2px solid rgb(12, 1, 1);
+  margin: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#section_pastas .productos_pastas img, .productos_pastas .productos_pastas img {
+  width: 100px;
+  height: 100px;
+}
+#section_pastas .productos_pastas:hover img, .productos_pastas .productos_pastas:hover img {
+  transition: transform 0.3s;
+  transform: rotate(90deg);
+}
+
+.contenedor {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.imagen-con-texto {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.imagen-con-texto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.texto {
+  position: absolute;
+  top: 46%;
+  left: 3px;
+  transform: translate(0, -50%);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.texto .texto h2,
+.texto .texto p {
+  margin: 0;
+}
+.texto .texto h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.texto .texto p {
+  font-size: 18px;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.imagen-con-texto {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.imagen-con-texto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-conteinering {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.carding {
+  border: 1px solid #64b897;
+  box-shadow: 0 99px 60px rgba(0, 0, 0, 0.02), 0 44px 44px rgba(0, 0, 0, 0.03), 0 11px 24px rgba(0, 0, 0, 0.03), 0 0 0 rgba(0, 0, 0, 0.03);
+  height: max-content;
+  padding: 22px 16px;
+  margin-top: 20px;
+}
+
+.cardpre {
+  text-align: center;
+  text-align-last: start;
+  margin: 22px;
+  padding: 22px;
+}
+
+.preparacion {
+  text-align: center;
+}
+.preparacion li {
+  text-align: left;
+}
+
+.contehistoria {
+  text-align: center;
+  top: auto;
+}
+
+footer {
+  background-color: rgb(230, 230, 225);
+  text-align: right;
+}
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+iframe {
+  max-width: 75%;
+  max-height: 75%;
+  height: auto;
+}
+
+.ifrcont {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.ifrcont iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 491px) {
+  header nav ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+/* (teléfonos móviles) 767   */
+@media (max-width: 767px) {
+  body {
+    background-color: rgb(20, 133, 170);
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  #section_pastas, .productos_pastas {
+    grid-template-columns: 1fr;
+  }
+  #section_pollo, .productos_pollo {
+    grid-template-columns: 1fr;
+  }
+  .card-conteinering {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    background-color: rgb(15, 224, 15);
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body {
+    background-color: rgb(245, 245, 201);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

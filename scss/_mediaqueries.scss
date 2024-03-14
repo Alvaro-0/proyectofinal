@@ -1,0 +1,42 @@
+@media (max-width: 491px) {
+  header nav ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/* (teléfonos móviles) 767   */
+
+@media (max-width: 767px) {
+  body {
+    background-color: rgb(20, 133, 170);
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+
+  #section_pastas {
+    grid-template-columns: 1fr;
+  }
+  #section_pollo {
+    grid-template-columns: 1fr;
+  }
+
+  .card-conteinering {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    background-color: rgb(15, 224, 15);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  body {
+    background-color: rgb(245, 245, 201);
+  }
+}

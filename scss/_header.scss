@@ -1,0 +1,29 @@
+header {
+  display: flex;
+ 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+
+  nav {
+    display: flex;
+
+    .logo {
+      width: 40px;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      
+      display: flex;
+      li {
+        margin-right: 15px;
+        a {
+          text-decoration: none;
+          color: $cl-black;
+        }
+      }
+    }
+  }
+}
